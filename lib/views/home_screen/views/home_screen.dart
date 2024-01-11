@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_dua_pt_bionic/utils/constant.dart';
 import 'package:test_dua_pt_bionic/views/contact_screen/views/add_contact_screen.dart';
+import 'package:test_dua_pt_bionic/views/image_screen/views/image_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -69,7 +70,13 @@ class HomeScreen extends StatelessWidget {
                 Column(
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => ImageScreen(),
+                            ));
+                      },
                       child: Icon(Icons.camera_alt, size: 100),
                     ),
                     Text(
