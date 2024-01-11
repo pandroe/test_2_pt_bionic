@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_dua_pt_bionic/home_screen/views/home_screen.dart';
+import 'package:test_dua_pt_bionic/views/contact_screen/views/add_contact_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomeScreen(),
+      home: AddContactScreen(),
     );
   }
 }
