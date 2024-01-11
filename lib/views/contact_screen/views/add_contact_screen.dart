@@ -52,13 +52,27 @@ class _AddContactScreenState extends State<AddContactScreen> {
               SizedBox(
                 height: constant.size.height * 0.050,
               ),
-              Text(
-                'Add Contact',
-                style: TextStyle(
-                  fontSize: Constant.fontExtraBig,
-                  fontWeight: FontWeight.bold,
-                  color: Color(Constant.blackColorLight),
-                ),
+              Row(
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: Icon(Icons.arrow_back,
+                        size: constant.size.height * 0.040),
+                  ),
+                  SizedBox(
+                    width: constant.size.width * 0.050,
+                  ),
+                  Text(
+                    'Add Contact',
+                    style: TextStyle(
+                      fontSize: Constant.fontExtraBig,
+                      fontWeight: FontWeight.bold,
+                      color: Color(Constant.blackColorLight),
+                    ),
+                  ),
+                ],
               ),
               SizedBox(
                 height: constant.size.height * 0.050,
