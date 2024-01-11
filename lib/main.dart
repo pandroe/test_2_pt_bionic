@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_dua_pt_bionic/home_screen/views/home_screen.dart';
+import 'package:test_dua_pt_bionic/views/home_screen/views/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
